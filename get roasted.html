@@ -6,58 +6,41 @@
   <title>$1 Roast Bot</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
+      background-color: #121212;
+      color: #f5f5f5;
+      font-family: sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       text-align: center;
+      padding: 20px;
     }
     h1 {
-      color: #ff5555;
+      color: #ff4444;
     }
     button {
-      padding: 10px 20px;
-      background: #ff5555;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #ff4444;
       color: white;
       border: none;
-      border-radius: 8px;
-      font-size: 18px;
+      border-radius: 6px;
       cursor: pointer;
       margin-top: 20px;
     }
     .roast {
       margin-top: 30px;
-      font-size: 20px;
+      font-size: 18px;
       max-width: 500px;
     }
   </style>
 </head>
 <body>
-  <h1>Pay $1 to Get Roasted 🔥</h1>
-  <p>(Totally worth it. Probably.)</p>
-  <button onclick="getRoast()">Pay $1</button>
-  <div class="roast" id="roastText"></div>
+  <h1>$1 Roast Machine</h1>
+  <p>Click below and regret everything.</p>
+  <button onclick="showRoast()">Roast Me</button>
+  <div class="roast" id="roast"></div>
 
   <script>
-    const roasts = [
-      "You just paid $1 for this? Bold move. Your wallet deserves better.",
-      "That haircut? Yeah... it's definitely a choice.",
-      "You're the human version of a software update — unnecessary and always badly timed.",
-      "You're not stupid; you just have bad luck thinking.",
-      "You're proof evolution sometimes takes a coffee break.",
-      "You make traffic jams feel productive.",
-      "You're like a cloud — when you disappear, it’s a beautiful day.",
-      "Paying to get insulted? Therapy is cheaper in the long run."
-    ];
-
-    function getRoast() {
-      const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
-      document.getElementById('roastText').innerText = randomRoast;
-    }
-  </script>
-</body>
-</html>
