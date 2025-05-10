@@ -1,79 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$1 Roast Bot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      color: #ff5555;
+    }
+    button {
+      padding: 10px 20px;
+      background: #ff5555;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .roast {
+      margin-top: 30px;
+      font-size: 20px;
+      max-width: 500px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;$1 Roast Bot&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #111;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #eee;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #ff5555;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #ff5555;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.roast {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Pay $1 to Get Roasted 🔥&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;(Totally worth it. Probably.)&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button onclick="getRoast()"&gt;Pay $1&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="roast" id="roastText"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const roasts = [</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You just paid $1 for this? Bold move. Your wallet deserves better.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"That haircut? Yeah... it's definitely a choice.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You're the human version of a software update — unnecessary and always badly timed.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You're not stupid; you just have bad luck thinking.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You're proof evolution sometimes takes a coffee break.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You make traffic jams feel productive.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"You're like a cloud — when you disappear, it’s a beautiful day.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"Paying to get insulted? Therapy is cheaper in the long run."</p>
-<p class="p1"><span class="Apple-converted-space">    </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function getRoast() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('roastText').innerText = randomRoast;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <h1>Pay $1 to Get Roasted 🔥</h1>
+  <p>(Totally worth it. Probably.)</p>
+  <button onclick="getRoast()">Pay $1</button>
+  <div class="roast" id="roastText"></div>
+
+  <script>
+    const roasts = [
+      "You just paid $1 for this? Bold move. Your wallet deserves better.",
+      "That haircut? Yeah... it's definitely a choice.",
+      "You're the human version of a software update — unnecessary and always badly timed.",
+      "You're not stupid; you just have bad luck thinking.",
+      "You're proof evolution sometimes takes a coffee break.",
+      "You make traffic jams feel productive.",
+      "You're like a cloud — when you disappear, it’s a beautiful day.",
+      "Paying to get insulted? Therapy is cheaper in the long run."
+    ];
+
+    function getRoast() {
+      const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
+      document.getElementById('roastText').innerText = randomRoast;
+    }
+  </script>
 </body>
 </html>
